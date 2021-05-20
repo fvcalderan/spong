@@ -25,7 +25,7 @@ suggest running Spong on WSL/WSL2.
 
 ## Running Spong
 There are two different ways to run the game: as host and as guest/client. To
-run as Host, open the terminal and type:
+run as host, open the terminal and type:
 ```
 python3 spong.py host [your ip] [port] [player_name]
 ```
@@ -45,9 +45,9 @@ You can host/join a game as an AI player by naming yourself `AI`. The
 difficulty can be changed inside `AI.py`.
 
 ## Modding the game
-Just modify `spong.py` as you like. Just remember that, even though Spong
-can be ran with 2 different source codes, incompatibilities might break
-the game, so it's better if both players have the same version.
+Just modify `spong.py` as you like. Remember that, even though Spong can be ran
+with 2 different source codes, incompatibilities might break the game, so it's
+better if both players have the same version.
 
 A very simple modification that can be done is changing the dimensions of the
 board by modifying the values of `SCR_H` and `SCR_W`. This will require a
@@ -60,4 +60,4 @@ to create a perfect-playing AI).
 Since this is a very rudimentary implementation of multiplayer, with enough
 weirdness going on with TCP messages it's possible that the game loses sync
 and breaks (a socket might send/receive too much or too little). It's unlikely
-to happen on `localhost` or local network, though.
+to happen on localhost or local network, though.
