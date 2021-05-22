@@ -1,0 +1,241 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 6}, {58, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "",
+          "name" : "label1",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "4B0D4920-BDD9-430D-93D4-D9B4A9A1CFE4",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "IP:",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 46}, {58, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "",
+          "name" : "label2",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "EC48B69E-31B5-4298-A4B2-885D1BC3F2C9",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Port:",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{72, 6}, {242, 32}}",
+        "class" : "TextField",
+        "attributes" : {
+          "uuid" : "97F3CD28-5C07-43A7-9BD3-25171B312B17",
+          "flex" : "W",
+          "corner_radius" : 15,
+          "frame" : "{{20, 104}, {200, 32}}",
+          "border_color" : "RGBA(0.376471,0.376471,0.376471,1.000000)",
+          "border_width" : 1,
+          "custom_attributes" : "{'bordered' : False}",
+          "alignment" : "center",
+          "autocorrection_type" : "default",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "",
+          "font_name" : "<System>",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "name" : "txtIP",
+          "font_size" : 17
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{72, 46}, {242, 32}}",
+        "class" : "TextField",
+        "attributes" : {
+          "uuid" : "97F3CD28-5C07-43A7-9BD3-25171B312B17",
+          "font_size" : 17,
+          "corner_radius" : 15,
+          "frame" : "{{20, 104}, {200, 32}}",
+          "border_color" : "RGBA(0.376471,0.376471,0.376471,1.000000)",
+          "border_width" : 1,
+          "custom_attributes" : "{'bordered' : False}",
+          "alignment" : "center",
+          "autocorrection_type" : "default",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "",
+          "font_name" : "<System>",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "name" : "txtPort",
+          "flex" : "W"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{27, 183}, {267, 135}}",
+        "class" : "Button",
+        "attributes" : {
+          "uuid" : "DF137425-6F49-4938-BC89-D783063C3B92",
+          "flex" : "W",
+          "corner_radius" : 15,
+          "background_color" : "RGBA(0.189139,0.189139,0.189139,1.000000)",
+          "frame" : "{{80, 104}, {80, 32}}",
+          "border_width" : 0,
+          "title" : "UP",
+          "action" : "up_tapped",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "btnUp",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{27, 326}, {267, 135}}",
+        "class" : "Button",
+        "attributes" : {
+          "uuid" : "DF137425-6F49-4938-BC89-D783063C3B92",
+          "font_size" : 15,
+          "corner_radius" : 15,
+          "background_color" : "RGBA(0.189139,0.189139,0.189139,1.000000)",
+          "frame" : "{{80, 104}, {80, 32}}",
+          "border_width" : 0,
+          "title" : "DOWN",
+          "action" : "down_tapped",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "btnDown",
+          "flex" : "W"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{225, 126}, {89, 32}}",
+        "class" : "Button",
+        "attributes" : {
+          "uuid" : "DF137425-6F49-4938-BC89-D783063C3B92",
+          "flex" : "WL",
+          "corner_radius" : 15,
+          "background_color" : "RGBA(0.189139,0.189139,0.189139,1.000000)",
+          "frame" : "{{80, 104}, {80, 32}}",
+          "border_width" : 0,
+          "title" : "Connect",
+          "action" : "connect_tapped",
+          "font_bold" : true,
+          "class" : "Button",
+          "name" : "btnConn",
+          "font_size" : 15
+        },
+        "selected" : true
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 86}, {58, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "",
+          "font_size" : 18,
+          "font_name" : "<System>",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "EC48B69E-31B5-4298-A4B2-885D1BC3F2C9",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Name:",
+          "name" : "label3",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{72, 86}, {242, 32}}",
+        "class" : "TextField",
+        "attributes" : {
+          "uuid" : "97F3CD28-5C07-43A7-9BD3-25171B312B17",
+          "flex" : "W",
+          "corner_radius" : 15,
+          "frame" : "{{20, 104}, {200, 32}}",
+          "border_color" : "RGBA(0.376471,0.376471,0.376471,1.000000)",
+          "border_width" : 1,
+          "custom_attributes" : "{'bordered' : False}",
+          "alignment" : "center",
+          "autocorrection_type" : "default",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "",
+          "font_name" : "<System>",
+          "spellchecking_type" : "default",
+          "class" : "TextField",
+          "name" : "txtName",
+          "font_size" : 17
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 126}, {211, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "lblMsg",
+          "flex" : "W",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "CF57BE92-47F6-4995-A74F-DA1E367DBBA9",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      }
+    ],
+    "frame" : "{{0, 0}, {320, 480}}",
+    "class" : "View",
+    "attributes" : {
+      "name" : "SpongControl",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]

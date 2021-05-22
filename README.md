@@ -56,6 +56,14 @@ smaller or bigger terminal depending on the values.
 Another possibility is to create new AIs (this is boring, since it's trivial
 to create a perfect-playing AI).
 
+## iOS App
+It's possible to play Spong using an iOS device as a "remote control". Copy the
+files inside `iOS_spong` to your iOS device and load them in `Pythonista 3`.
+The iOS version can only join games and the procedure to join is basically the
+same as in the terminal version: type the informations requested in the text
+boxes and tap the `Connect` button. You can find a screenshot of the App inside
+the `images` folder.
+
 ## Known bugs
 Since this is a very rudimentary implementation of multiplayer, with enough
 weirdness going on with TCP messages it's possible that the game loses sync
