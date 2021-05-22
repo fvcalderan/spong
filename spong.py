@@ -372,15 +372,19 @@ def main(scr : curses.window):
                 player1.move('up')
             elif action == 'down' and player1.y < arena.bound_y-3:
                 player1.move('down')
-            elif action == 'quit' : sys.exit(0)
+            elif action == 'quit' :
+                clskt.close()
+                sys.exit(0)
             else: action = None
 
             # Send ball and host's action
             try:
                 clskt.send(pickle.dumps((str(action), ball.upload())))
                 player2_action = clskt.recv(16).strip().decode()
-                if   player2_action == 'up'   : player2.move('up')
-                elif player2_action == 'down' : player2.move('down')
+                if player2_action == 'up' and player2.y > arena.y+3:
+                    player2.move('up')
+                elif player2_action == 'down' and player2.y < arena.bound_y-3:
+                    player2.move('down')
             except:
                 show_msg(scr, 0, SCR_W, MSG_DISCONN)
 
@@ -394,7 +398,9 @@ def main(scr : curses.window):
                 player2.move('up')
             elif action == 'down' and player2.y < arena.bound_y-3:
                 player2.move('down')
-            elif action == 'quit': sys.exit(0)
+            elif action == 'quit':
+                skt.close()
+                sys.exit(0)
             else: action = None
 
             # Send client's action, then get ball and host's position
@@ -403,8 +409,10 @@ def main(scr : curses.window):
                 player1_action, ball_info = pickle.loads(
                     skt.recv(sys.getsizeof(('down', ball.upload()))*3)
                 )
-                if   player1_action == 'up'   : player1.move('up')
-                elif player1_action == 'down' : player1.move('down')
+                if player1_action == 'up' and player1.y > arena.y+3:
+                    player1.move('up')
+                elif player1_action == 'down' and player1.y < arena.bound_y-3:
+                    player1.move('down')
                 ball.download(ball_info)
             except:
                 show_msg(scr, 0, SCR_W, MSG_DISCONN)
