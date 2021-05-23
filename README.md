@@ -19,9 +19,7 @@ See the full license inside LICENSE file
 ## Prerequisites
 The only prerequisite to run Spong is the `curses` library for Python. If
 you run GNU/Linux or macOS, it's very likely that it's already installed. On
-Windows, though, unfortunately it's not installed by default and there may not
-be a direct equivalent (with the same exact function names and stuff), so I
-suggest running Spong on WSL/WSL2.
+Windows, though, it's required that you `pip install windows-curses`.
 
 ## Running Spong
 There are two different ways to run the game: as host and as guest/client. To
