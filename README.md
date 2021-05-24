@@ -38,6 +38,11 @@ python3 spong.py join localhost 1234 Skore
 
 **NOTE:** it's required that both terminals are at least 80x20 (by default).
 
+## Default controls
+- Move up: `w`, `k` or `arrow up`
+- Move down: `s`, `j` or `arrow down`
+- Quit: `q`
+
 ## Playing as AI
 You can host/join a game as an AI player by naming yourself `AI`. The
 difficulty can be changed inside `AI.py`.
@@ -54,7 +59,7 @@ smaller or bigger terminal depending on the values.
 Another possibility is to create new AIs (this is boring, since it's trivial
 to create a perfect-playing AI).
 
-## iOS App
+## iOS App (remote control)
 It's possible to play Spong using an iOS device as a "remote control". Copy the
 files inside `iOS_spong` to your iOS device and load them in `Pythonista 3`.
 The iOS version can only join games and the procedure to join is basically the
@@ -62,8 +67,17 @@ same as in the terminal version: type the informations requested in the text
 boxes and tap the `Connect` button. You can find a screenshot of the App inside
 the `images` folder.
 
+## Android App (remote control)
+Just like the iOS version, it's possible to play Spong using Android through
+the Tkinter version. Copy the file inside `Tkinter_spong` to your Android
+device and load them in `Pydroid 3`. It should work just like the iOS version.
+It's also worth mentioning that this version runs on desktop too, although
+there isn't really a reason to do so. You can find a screenshot of the App
+inside the `images` folder.
+
 ## Known bugs
-Since this is a very rudimentary implementation of multiplayer, with enough
+- Since this is a very rudimentary implementation of multiplayer, with enough
 weirdness going on with TCP messages it's possible that the game loses sync
-and breaks (a socket might send/receive too much or too little). It's unlikely
-to happen on localhost or local network, though.
+and breaks.
+- If you play Spong on windows using the `windows-curses` library, the arrow
+keys will not work.
