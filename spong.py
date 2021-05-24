@@ -330,7 +330,7 @@ def main(scr : curses.window):
                 clskt.send(plname.encode().ljust(16))
                 # Receive client name and add to screen
                 try:
-                    clname = clskt.recv(16).strip().decode()
+                    clname = clskt.recv(16).strip().decode()[:16]
                 except:
                     show_msg(scr, 0, SCR_W, MSG_DISCONN)
                 scr.addstr(0, SCR_W+1-len(clname), clname)
@@ -340,7 +340,7 @@ def main(scr : curses.window):
             if not accepted:
                 # Receive host name and add to screen
                 try:
-                    scr.addstr(0, 0, skt.recv(16).strip().decode())
+                    scr.addstr(0, 0, skt.recv(16).strip().decode()[:16])
                 except:
                     show_msg(scr, 0, SCR_W, MSG_DISCONN)
                 # Write client name on the screen and send it
