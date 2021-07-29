@@ -365,8 +365,7 @@ def main(scr : curses.window):
         if mode == 'host':
             action = get_action(
                 scr, arena, player1, keys, plname=='AI',
-                {**{'p1' : player1.y, 'p2' : player2.y},
-                 **{'ball' : ball.upload()}}
+                {'p1' : player1.y, 'p2' : player2.y, 'ball' : ball.upload()}
             )
             if action == 'up' and player1.y > arena.y+3:
                 player1.move('up')
@@ -391,8 +390,7 @@ def main(scr : curses.window):
         else:
             action = get_action(
                 scr, arena, player2, keys, plname=='AI',
-                {**{'p1' : player1.y, 'p2' : player2.y},
-                 **{'ball': ball.upload()}}
+                {'p1' : player1.y, 'p2' : player2.y, 'ball': ball.upload()}
             )
             if action == 'up' and player2.y > arena.y+3 :
                 player2.move('up')
