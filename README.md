@@ -61,7 +61,7 @@ to create a perfect-playing AI).
 
 ## iOS App (remote control)
 It's possible to play Spong using an iOS device as a "remote control". Copy the
-files inside `iOS_spong` to your iOS device and load them in `Pythonista 3`.
+files inside `iOS_spong` to your iOS device and load them in Pythonista 3.
 The iOS version can only join games and the procedure to join is basically the
 same as in the terminal version: type the informations requested in the text
 boxes and tap the `Connect` button. You can find a screenshot of the App inside
@@ -70,10 +70,26 @@ the `images` folder.
 ## Android App (remote control)
 Just like the iOS version, it's possible to play Spong using Android through
 the Tkinter version. Copy the file inside `Tkinter_spong` to your Android
-device and load them in `Pydroid 3`. It should work just like the iOS version.
+device and load them in Pydroid 3. It should work just like the iOS version.
 It's also worth mentioning that this version runs on desktop too, although
 there isn't really a reason to do so. You can find a screenshot of the App
 inside the `images` folder.
+
+## NTC C.H.I.P
+If you are on Debian Jessie, be sure to edit `/etc/apt/sources.list` to replace
+the defunct `opensource.nextthingco` repositories by:
+```
+deb http://chip.jfpossibilities.com/chip/debian/repo jessie main
+deb http://chip.jfpossibilities.com/chip/debian/pocketchip jessie main
+```
+After that, run a `sudo apt update && sudo apt upgrade` (user/pw: `chip`) and
+then `sudo apt install python3`. You should be able to download Python 3.4. A
+compatible version of Spong in included inside the folder `CHIP_spong`. The
+default `AI.py` file should work just as fine on C.H.I.P.
+
+If you are on a newer version of Debian (Stretch/Buster) or use Berryconda you
+should be fine with the default `spong.py`, since a newer version of Python 3
+is available to you.
 
 ## Known bugs
 - Since this is a very rudimentary implementation of multiplayer, with enough
